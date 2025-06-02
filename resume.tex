@@ -5,6 +5,9 @@
 \usepackage{titlesec}
 \usepackage{geometry}
 \usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{mathpazo}
+\setlength{\parskip}{0pt}
 \geometry{margin=1in}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
@@ -28,7 +31,7 @@ Tech-savvy professional with a strong background in project management and marke
 
 \textbf{Data Scientist (Contract)} \hfill Nov 2022 -- Present \\
 \textit{Independent Project | Hilton-Style MLOps Pipeline} \\
-\begin{itemize}[leftmargin=*]
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
     \item Led the end-to-end development of a machine learning model to predict guest upsell propensity and forecast revenue.
     \item Implemented data versioning and transformation pipelines using DVC with raw/processed Parquet datasets.
     \item Built and tracked classification/regression models using XGBoost; logged runs, metrics, and artifacts with MLflow.
@@ -40,7 +43,7 @@ Tech-savvy professional with a strong background in project management and marke
 
 \textbf{Business Analyst} \hfill 2023 -- Present \\
 \textit{Lake Havasu City} \\
-\begin{itemize}[leftmargin=*]
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
     \item Led needs assessments and process analyses across public safety departments to scope and onboard vendor software.
     \item Translated operational challenges into business and technical requirements across IT, police, and fire.
     \item Presented findings and data dashboards to city stakeholders to drive adoption and track KPIs.
@@ -48,7 +51,7 @@ Tech-savvy professional with a strong background in project management and marke
 
 \textbf{Product Marketing Manager} \hfill 2018 -- 2023 \\
 \textit{Walmart Global eCommerce} \\
-\begin{itemize}[leftmargin=*]
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
     \item Managed high-throughput digital campaigns targeting members across Walmart platforms.
     \item Optimized customer segmentation and campaign analytics using SQL and in-house data platforms.
     \item Collaborated with engineering teams on feature delivery for marketing APIs and ad tech integrations.
@@ -57,16 +60,13 @@ Tech-savvy professional with a strong background in project management and marke
 \section*{Projects}
 
 \textbf{Vacation Ownership Demand Forecasting (MLOps Case Study)} \\
-\begin{itemize}[leftmargin=*]
-    \item Used a Kaggle hotel booking dataset to simulate real-world demand and upsell forecasting.
-    \item Created features including lead time, is\_weekend, revenue, and encoded categorical fields.
-    \item Developed model pipeline with MLflow tracking and Optuna tuning to optimize performance.
-    \item Deployed model with FastAPI + Docker, published to GHCR, and configured GitHub Actions for CI/CD.
-    \item Simulated production drift using Evidently to demonstrate model monitoring and alerting.
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+    \item Simulated upsell and revenue forecasts on hotel data using XGBoost and SHAP.
+    \item Deployed MLOps stack with FastAPI, Docker, GHCR, and drift monitoring.
 \end{itemize}
 
 \subsection*{High-Probability Options Screener}
-\begin{itemize}[noitemsep]
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
     \item Designed and developed a data science pipeline to screen and rank high-probability options trades using Python.
     \item Engineered features from historical stock data, earnings schedules, open interest, implied volatility (IV), and Greeks.
     \item Built a rule-based strategy evaluator to assess expected return, risk/reward ratio, and probability of profit (POP).
@@ -74,10 +74,12 @@ Tech-savvy professional with a strong background in project management and marke
 \end{itemize}
 
 \section*{Skills}
+\begin{tabular}{p{0.25\textwidth} p{0.7\textwidth}}
+\textbf{Languages/Tools} & Python, SQL, Git, Bash, Markdown \\
+\textbf{ML/Data} & XGBoost, pandas, scikit-learn, Optuna, SHAP, Evidently \\
+\textbf{Ops} & DVC, MLflow, Docker, FastAPI, GitHub Actions \\
+\end{tabular}
 
-\textbf{Languages/Tools:} Python, SQL, Git, Bash, Markdown \\
-\textbf{ML/Data:} XGBoost, pandas, scikit-learn, Optuna, SHAP, Evidently \\
-\textbf{Ops:} DVC, MLflow, Docker, FastAPI, GitHub Actions
 
 \section*{Education}
 
