@@ -1,0 +1,70 @@
+
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Cody McKeon}} \\
+    \vspace{4pt}
+    Lake Havasu City, AZ \\
+    \href{mailto:cody@example.com}{cody@example.com} | (123) 456-7890 | \href{https://github.com/cody-mckeon}{github.com/cody-mckeon}
+\end{center}
+
+\vspace{8pt}
+
+\section*{Summary}
+Tech-savvy professional with a strong background in project management and marketing technology, recently transitioned into Data Science. Led a full-stack MLOps project with a focus on data versioning, model tracking, explainability, and deployment. Adept at applying ML pipelines in practical business contexts using modern open-source tools.
+
+\section*{Experience}
+
+\textbf{Data Scientist (Contract)} \hfill Nov 2022 -- Present \\
+\textit{Independent Project | Hilton-Style MLOps Pipeline} \\
+\begin{itemize}[leftmargin=*]
+    \item Led the end-to-end development of a machine learning model to predict guest upsell propensity and forecast revenue.
+    \item Implemented data versioning and transformation pipelines using DVC with raw/processed Parquet datasets.
+    \item Built and tracked classification/regression models using XGBoost; logged runs, metrics, and artifacts with MLflow.
+    \item Achieved ROC AUC of 0.713 and reduced MAE to \$1.52 using Optuna for hyperparameter optimization.
+    \item Developed SHAP explainability reports highlighting key predictors like lead time and booking source.
+    \item Deployed model as a FastAPI microservice containerized in Docker and published to GitHub Container Registry (GHCR) via CI/CD.
+    \item Added drift detection automation using Evidently and planned model retraining triggers.
+\end{itemize}
+
+\textbf{Marketing Technology Specialist} \hfill 2019 -- 2022 \\
+\textit{Walmart Global eCommerce} \\
+\begin{itemize}[leftmargin=*]
+    \item Managed high-throughput digital campaigns targeting members across Walmart platforms.
+    \item Optimized customer segmentation and campaign analytics using SQL and in-house data platforms.
+    \item Collaborated with engineering teams on feature delivery for marketing APIs and ad tech integrations.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Vacation Ownership Demand Forecasting (MLOps Case Study)} \\
+\begin{itemize}[leftmargin=*]
+    \item Used a Kaggle hotel booking dataset to simulate real-world demand and upsell forecasting.
+    \item Created features including lead time, is\_weekend, revenue, and encoded categorical fields.
+    \item Developed model pipeline with MLflow tracking and Optuna tuning to optimize performance.
+    \item Deployed model with FastAPI + Docker, published to GHCR, and configured GitHub Actions for CI/CD.
+    \item Simulated production drift using Evidently to demonstrate model monitoring and alerting.
+\end{itemize}
+
+\section*{Skills}
+
+\textbf{Languages/Tools:} Python, SQL, Git, Bash, Markdown \\
+\textbf{ML/Data:} XGBoost, pandas, scikit-learn, Optuna, SHAP, Evidently \\
+\textbf{Ops:} DVC, MLflow, Docker, FastAPI, GitHub Actions
+
+\section*{Education}
+
+\textbf{B.S. in Marketing Technology} \hfill University of XYZ
+
+\end{document}
